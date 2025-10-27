@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36e China 2eme 华人二营招募信息</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 头部样式 */
+        header {
+            background: linear-gradient(135deg, #c00 0%, #900 100%);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo span {
+            color: #ffd700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #900;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #ffed4a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* 主要内容区域 */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            color: #900;
+            border-left: 5px solid #ffd700;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            border-top: 4px solid #c00;
+        }
+        
+        .info-card h3 {
+            color: #c00;
+            margin-bottom: 10px;
+        }
+        
+        /* 招募流程 */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .step {
+            flex: 0 0 22%;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: #c00;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            right: -40%;
+            width: 80%;
+            height: 2px;
+            background-color: #ddd;
+            z-index: -1;
+        }
+        
+        /* 联系方式 */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-item i {
+            font-size: 2rem;
+            color: #c00;
+            margin-bottom: 10px;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .process-steps {
+                flex-direction: column;
+            }
+            
+            .step {
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+            
+            .step:not(:last-child)::after {
+                display: none;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="container">
+            <h1 class="logo">36e China <span>2eme</span> 华人二营</h1>
+            <p class="subtitle">我们从华人排起家，历经磨难成为合法华人组织</p>
+            <a href="#apply" class="cta-button">立即申请加入</a>
+        </div>
+    </header>
+    
+    <!-- 主要内容区域 -->
+    <div class="main-content container">
+        <!-- 关于我们 -->
+        <section class="section">
+            <h2 class="section-title">关于二营</h2>
+            <p>“36e China 2eme Bataillon”是一个36e的营级华人nw亚洲时区组织，在今年4月中旬“36e cn”由dogandkill(蘑菇)创立的，最初为顶替36e英文线原先关闭的腾跃线而开放招募的，我们有最好的员工为你服务。
+                          QQ群:
+                          1046079182</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>我们的使命</h3>
+                    <p>搭建nw华人精英组织，共同创造更大成就!</p>
+                </div>
+                <div class="info-card">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info-card">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 招募信息 -->
+        <section class="section">
+            <h2 class="section-title">招募信息</h2>
+            <p>“36e China 2eme” 正在招募中!!!  如果您对拿破仑战争时期的法帝制服，晋升，勋章感兴趣，就可以加入我们!  KOOK链接:https://kook.vip/DbAh1p
+            Discord链接:https://discord.gg/victoire</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>招募对象</h3>
+                    <ul>
+                        <li>有战斗能力的电脑或外设玩家</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>入伍条件</h3>
+                    <ul>
+                        <li>拥有一台电脑或是有外接键盘鼠标和转换器</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3></h3>
+                    <ul>
+                        <li>拥有一个VPN(qq群里有)</li>
+                        <li>拥有一个电子邮箱账号</li>
+                        <li>没有其他Regiment(团)</li>
+                        <li>拥有KOOK和Discord(qq群里有)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 招募流程 -->
+        <section class="section">
+            <h2 class="section-title">需要的软件</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3></h3>
+                    <p>Discord</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3></h3>
+                    <p>KOOK</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3></h3>
+                    <p>VPN梯子</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3></h3>
+                    <p>QQ邮箱</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 申请方式 -->
+        <section id="apply" class="section">
+            <h2 class="section-title">申请方式</h2>
+            <p>在kook服务器里发送申请入伍!(Discord同理)</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i>📩</i>
+                    <h3>KOOK频道:“JOIN 2EME | 🚪入伍申请”</h3>
+                    <p>↓</p>
+                </div>
+                <div class="contact-item">
+                    <i></i>
+                    <h3<</h3>
+                    <p>Discord頻道:“#✍🏻36e-華人入伍”</p>
+                </div>
+                <div class="contact-item">
+                    <i></i>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="cta-button"></a>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>2023 36e China 2eme 招募部@China_Yearago制作</p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>
